@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     color: #fff;
-    font-family: "Playwrite IT Moderna", cursive;
+    font-family: "Sofadi One", system-ui;
 }
 
 body{
@@ -30,6 +30,7 @@ nav > button{
     border-radius: 5px;
     padding: 10px;
     border: none;
+    font-size: 1.1rem;
     box-shadow: 1px 1px 5px #999;
     font-weight: 800;
     text-shadow: 2px 2px 2px #999;
@@ -38,8 +39,94 @@ nav > button{
 nav > button:hover{
     color: #ff0101;
     box-shadow: 0 0 3px #ff0101;
+    text-shadow: none;
 }
 
 nav > button:active{
     scale: 0.95;
+}
+
+#content{
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#content > div{
+    animation: from_right 0.9s ease-out forwards; 
+}
+
+.img-container{
+    height: 20rem;
+    width: 100%;
+    background: url(https://img.freepik.com/free-psd/special-delicious-food-social-media-banner-post-template_202595-499.jpg?ga=GA1.1.2115851145.1745754728&semt=ais_hybrid&w=740) center/cover;
+}
+
+#content > div > *{
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8) ;
+}
+
+#content > div > div{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+p{
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+}
+
+h2{
+    font-size: 1.7rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.fa-check{
+    font-style: italic;
+    color: #80d1dc;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 10px;
+    place-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img:hover{
+    scale: 0.94;
+}
+
+.food-info{
+    cursor: pointer;
+}
+.menu-item:hover h3,
+.menu-item:hover p{
+    color: #ff0101;
+}
+
+@keyframes from_right {
+    0%{
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
