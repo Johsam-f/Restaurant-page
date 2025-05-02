@@ -1,7 +1,7 @@
 const about_content = ()=>{
     return`  <div>
         <div>
-          <h1>About Us</h1>
+          <h2>About Us</h2>
         </div>
 
         <div class="section">
