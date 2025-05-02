@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofadi+One&family=Tagesschrift&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+body{
+    background: url(https://img.freepik.com/free-photo/restaurant-interior_1127-3392.jpg?ga=GA1.1.2115851145.1745754728&semt=ais_hybrid&w=740) fixed center/cover;
+    backdrop-filter: blur(3px);
+    min-height: 100vh;
+}
+
+nav{
+    /* height: 60px; */
+    width: 100vw;
+    /* background-color: #041b6b; */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+nav > button{
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(40px);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px #999;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #999;
+}
+
+nav > button:hover{
+    color: #ff0101;
+    box-shadow: 0 0 3px #ff0101;
+}
+
+nav > button:active{
+    scale: 0.95;
+}
